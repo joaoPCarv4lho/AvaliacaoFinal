@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>GIT E GITHUB</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Git e GitHub</h1>
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <p><a class="nav-link link-success" href="index.html">Homepage</a>
+                </li>
+                </p>
+                <li class="nav-item">
+                    <p><a href="Hospedagem.html" class="nav-link link-success">Hospedagem</a>
+                </li>
+                </p>
+                <li class="nav-item">
+                    <p><a class="nav-link active nav-link link-success" aria-current="page" href="#">Git e GitHub</a>
+                </li>
+                </p>
+                <li class="nav-item">
+                    <p><a class="nav-link link-success" href="GitHubPages.html">GitHub Pages</a>
+                </li>
+                </p>
+                <li class="nav-item">
+                    <p><a class="nav-link link-success" href="Portifolio.html">Portifolio</a>
+                </li>
+                </p>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-header">
+            <h2>Qual a diferença entre os dois?</h2>
+        </div>
+
+        <div class="container">
+            <div class="container-left">
+                <h4>O <b>Git</b> é uma ferramenta de versionamento local, que salva o estado de cada arquivo na hora do
+                    versionamento e caso o arquivo não sofra a alteração ele cria um link simbólico para o arquivo não
+                    editado. Para poder utilizar os comandos do git, você precisará executar o seguinte tutorial:
+                </h4>
+                <br>
+                <h4>
+                    <ol>
+                        <li>Fazer download do <a href="https://git-scm.com/downloads">Git</a></li>
+                        <li>Fazer Instalação</li>
+                        <li>Verificar versão</li>
+                        <li>Configurá-lo</li>
+                        <li>Inicializá-lo</li>
+                    </ol>
+                </h4>
+                <br>
+                <h4>Alguns comandos mais usados do git são:</h4>
+                <br>
+                <ul>
+                    <li>git status</li>
+                    <li>git add < filename ou . ></li>
+                    <li>git restore --staged < filename ou . > </li>
+                    <li>git branch < branchname ></li>
+                    <li>git checkout < branchname ></li>
+                    <li>git checkout -b < branchname ></li>
+                    <li>git commit -m < description ></li>
+                    <li>git push</li>
+                    <li>git branch -D < branchname ></li>
+                    <li>git fetch</li>
+                    <li>git pull</li>
+                </ul>
+                <br><hr><br>
+                <div>
+                    <h4>Juntamente com o Git, utiliza-se também o <b>GitHub</b>. Que é um serviço Web compartilhado para projetos que utilizam o Git para versionamento. É um local de armazenamento de código.A diferença entre os dois é que o Git faz o controle de Versão localmente e o GitHub é um repositório remoto.</h4>
+                    <br>
+                    <h4>Para utilizar o GitHub primeiro é necessário criar uma conta. De preferência use o mesmo email que você usou para configurar o git! Após criada a conta iremos para os seguintes passos: </h4>
+                    <br>
+                    <ol>
+                        <li>Verificar se exsite chave SSH.</li>
+                        <p><i>ls -al˜/.ssh</i></p>
+                        <li>Adicionar uma nova chave
+                            <p><i>ssh-keygen -t ed25519 -C "seu_email@exemplo.com"</i></p>
+                        </li>
+                        <li>Inicializar agente-ssh.
+                            <p><i>eval "$(ssh-agent-s)"</i></p>
+                        </li>
+                        <li>Adicionar chave ssh ao agente.
+                            <p><i>ssh-add˜/.ssh/id_ed25519</i></p>
+                        </li>
+                        <li>Copiar chave ssh
+                            <p><i>clip < ˜/.ssh/id_ed25519.pub</i></p>
+                        </li>
+                        <li>Adicionar chave no GitHub
+                            <p><i>GitHub -> Settings -> SSH and GPG keys -> New SSH key -> Colar</i></p>
+                        </li>
+                        <li>Testar Conexão
+                            <p><i>ssh -T git@github.com  yes</i></p>
+                        </li>
+                    </ol>
+                    <br>
+                    <h4>Deve-se lembrar de manter as boas práticas, e aqui está algumas delas:</h4>
+                    <br>
+                    <img src="assets/images/png/BoasPraticas.png" alt="">
+                </div>
+            </div>
+
+            <div class="container-right">
+                <div>
+                    <ol>
+                        <li>
+                            <p>Após acessar o link de download, basta escolher a versão compatível com seu Sistema
+                                Operacional.</p>
+                            <img src="assets/images/png/Download git.png" alt="">
+                        </li>
+                        <br>
+                        <li>
+                            <p>Ao instalar você pode manter as configurações padrões que o próprio git indica.</p>
+                            <img src="assets/images/png/P InstalaçãoGit.png" alt="">
+                            <br><br>
+                            <img src="assets/images/png/T InstalaçãoGit.png" alt="">
+                        </li>
+                        <br>
+                        <li>
+                            <p>Após terminar de instalar, você agora pode verificar se o git foi instalado corretamente. Você pode fazer isso abrindo o terminal de controle ( CMD ) e digitar o seguinte comando: <i>git --version</i></p>
+                        </li>
+                        <br>
+                        <li>
+                            <p>Para configurá-lo é bem simples, basta você digitar os seguintes comandos: </p>
+                            <img src="assets/images/png/Configurando.png" alt="">
+                        </li>
+                        <br>
+                        <li>
+                            <p>Após configurar o git com seu email e usuário, basta inicializá-lo para poder começar a fazer uso da ferramenta em seus projetos. Para inicializá-lo você precisa abrir o terminal de controle, e digitar os seguintes comandos: </p>
+                            <img src="assets/images/png/Inicializando.png" alt="">
+                        </li>
+                    </ol>
+                </div>
+                <br><br>
+                <div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
